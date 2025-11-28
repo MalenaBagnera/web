@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <img src="img/Logo.PNG" width="300" height="200" class="d-block mx-auto mt-0" alt="logo de Monsters Inc p-0">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#P"> Proceso </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#F"> Finales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#I"> Integrantes </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+
+      <div class="col-md-8 col-sm-12 g-4">
+        <div class="card">
+          <img src="img/Portada.jpg" class="card-img-top" alt="portada de la aventura grafica">
+          <div class="card-body">
+            <p class="card-text fw-light">Para realizar nuestra aventura gráfica decidimos utilizar la película
+              Monsters Inc.
+              La situación que elegimos fue “Mi primer turno”, en la que un monstruo debe encontrar la manera de
+              llenar un tanque de sustos. Para lograrlo, atraviesa distintos caminos que lo llevarán a tres finales
+              posibles: uno malo, uno intermedio y otro que representa el mejor resultado. Durante el recorrido de
+              esta aventura gráfica, el jugador debe elegir las opciones que considere correctas para ayudar al
+              monstruo a superar con éxito su primer día.</p>
+           
+            <button type="button" class="btn btn-outline-secondary fw-semibold" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Ver aventura gráfica
+            </button>
+          </div>
+        </div>
+
+
+        
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Mi primer turno</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <iframe src="p5/index.html" frameborder="0" width="650" height="490"></iframe>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4 col-sm-12 g-4" id="P">
+        <div class="card">
+          <h4 class="card-header fw-semibold">Proceso de producción</h4>
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Planificación y organización del recorrido</h5>
+            <p class="card-text fw-light">Realizamos un userflow narrativo con todas las decisiones posibles, que nos
+              permitió
+              visualizar los tres finales y las distintas rutas que el jugador podría seguir.
+              Para ordenar todo trabajamos en un panel de
+              Figma donde armamos el flujo completo de la aventura. </p>
+
+            <a href="https://www.figma.com/file/KSafGxX4MXAUEdMAhHvPnd?node-id=0:1&locale=es-la&type=design" >
+             <button type="button" class="btn btn-outline-secondary fw-semibold" >Ir a figma</button> </a>
+
+
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Diseño visual
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fw-light"> Luego con una IA desarrollamos las pantallas con sus respectivos
+                elementos
+                visuales para representar cada escena. Seleccionamos imágenes y realizamos ajustes para lograr un
+                estilo visual coherente con el universo de Monsters Inc.
+                Como también diseñamos los botones con los textos que permiten avanzar en la historia.
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Construcción de pantallas
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fw-light"> A partir del recorrido definido en Figma, creamos cada pantalla
+                individual
+                de la aventura gráfica. Para cada una determinamos: el fondo o escenario, el personaje principal en
+                distintas situaciones, el texto narrativo que acompaña la historia y las dos opciones que el jugador
+                puede elegir.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Programación y funcionamiento
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fw-light"> La aventura fue programada utilizando p5.js.
+                Organizamos el código dividiendo el proyecto en:
+                Funcionamiento general: estructura del setup() y draw().
+                Sistema de pantallas: variables que identifican la pantalla actual y condiciones que permiten cambiar
+                de escena según las elecciones del jugador.
+                Interacciones: uso de mousePressed() para detectar las decisiones del jugador y dirigirlo a la
+                siguiente pantalla.
+                Finales: condiciones finales que muestran uno de los tres desenlaces posibles.
+                De esta manera, el jugador puede avanzar, retroceder o llegar a distintos resultados dependiendo de
+                las opciones que elija.
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <h4 class="text-center fw-bolder g-4" id="F"> Finales </h4>
+      <div id="carouselExampleIndicators" class="carousel slide g-4">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Final1.jpg" class="d-block w-100" alt="imagen del final menos favorable">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Final3.jpg" class="d-block w-100" alt="imagen del final intermedio">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Final2.jpg" class="d-block w-100" alt="imagen del mejor final">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-12">
+
+
+          <button class="btn btn-outline-primary fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFinal1" aria-expanded="false" aria-controls="collapseFinal1">
+            Primer final
+          </button>
+
+          <div style="min-height: 20px;">
+            <div class="collapse collapse-horizontal" id="collapseFinal1">
+              <div class="card card-body fw-light" style="width: 300px;">
+                Este es el desenlace menos favorable. El monstruo no logra cumplir su objetivo de ninguna manera y
+                termina
+                siendo desplazado a la zona de correo, considerada el área más aburrida de la fábrica y el lugar donde
+                menos quería trabajar.
+                Como resultado, pierde la oportunidad de convertirse en asustador y, con el tiempo, acaba siendo
+                despedido de su empleo.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline-primary fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFinal2" aria-expanded="false" aria-controls="collapseFinal2">
+            Segundo final
+          </button>
+
+          <div style="min-height: 20px;">
+            <div class="collapse collapse-horizontal" id="collapseFinal2">
+              <div class="card card-body fw-light" style="width: 300px;">
+                Un final aceptable. En esta situación, el monstruo consigue desempeñarse como lo haría un asustador
+                promedio en un día normal de trabajo. Cumple con lo justo y necesario para completar su labor.
+                Esto es positivo, ya que su jefe lo seguirá convocando como asustador. Además, logra integrarse con sus
+                compañeros y sentirse satisfecho por haber superado su primer día.
+
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline-primary fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFinal3" aria-expanded="false" aria-controls="collapseFinal3">
+            Tercer final
+          </button>
+
+          <div style="min-height: 20px;">
+            <div class="collapse collapse-horizontal" id="collapseFinal3">
+              <div class="card card-body fw-light" style="width: 300px;">
+                En el desenlace ideal, el monstruo descubre una forma eficiente de llenar tanques y se convierte en el
+                mejor novato de la planta. Gracias a su rendimiento destacado, recibe un premio especial que mejora su
+                posición dentro de la fábrica.
+                Sus compañeros se muestran asombrados y orgullosos, y es recibido con entusiasmo en el establecimiento.
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="I">
+      <h4 class="py-md-4 py-sm-1 text-center fw-bolder">Integrantes </h4>
+      <div class="card col-md-6 col-sm-12 g-4">
+
+        <img src="img/Malena.jpg" class="card-img-center" alt="foto de una de las integrantes">
+        <div class="card-body">
+          <h5 class="card-title fst-italic">Malena Bagnera</h5>
+
+          <button class="btn btn-outline-info fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseMalena" aria-expanded="false" aria-controls="collapseMalena">
+            Info
+          </button>
+
+          <div style="min-height: 20px;">
+            <div class="collapse collapse-horizontal" id="collapseMalena">
+              <div class="card card-body fw-light" style="width: 300px;">
+                Tengo 19 años, me gusta jugar voley, disfruto de salir a merendar con mis amigas/familia, y mi comida
+                favorita son las pastas (especialmente los ñoquis).
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="card col-md-6 col-sm-12 g-4">
+
+        <img src="img/Carola.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fst-italic">Carola Forneris </h5>
+
+          <button class="btn btn-outline-info fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseCarola" aria-expanded="false" aria-controls="collapseCarola">
+            Info
+          </button>
+
+          <div style="min-height: 20px;">
+            <div class="collapse collapse-horizontal" id="collapseCarola">
+              <div class="card card-body fw-light" style="width: 300px;">
+                Me encanta ir a recitales y disfrutar de la música en vivo. Mi comida favorita son las pastas, en todas
+                sus variedades. Para el postre, mi elección es el helado. Por último, si tengo que elegir un color, mi
+                predilecto es el verde.
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col-md-6 col-sm-2 g-4">
+        <img src="img/creditos .jpg" alt="imagen de creditos" class="img-fluid">
+      </div>
+      <div class="col-md-6 col-sm-10 g-4">
+        <h4 class="fw-semibold">TP FINAL - Etapa 3 - Aventura gráfica</h4>
+        <p class="fw-light"> Sitio web de la aventura gráfica interactiva </p>
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
