@@ -1,0 +1,43 @@
+body {
+    background-color: #72d6fa !important;
+    font-family: 'Fredoka',sans-serif ;
+}
+
+
+.navbar {
+    background-color: #0a75d9 !important;
+}
+
+
+
+.card {
+    background-color: #0a75d9 !important;
+    color: white !important;
+
+}
+.card-title {
+    color: #72d6fa !important;
+}
+.card-text {
+    color: white !important;
+}
+.card a {
+    color: white !important;
+}
+.card-body {
+    color: white !important;
+}
+
+
+
+.accordion-button {
+    background-color: #0a75d9  !important; 
+    color: white !important;              
+    font-weight: 600;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #72d6fa !important; 
+    color: white !important;
+}
